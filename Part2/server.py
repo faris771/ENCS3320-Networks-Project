@@ -27,7 +27,7 @@ def handle_client(): # Function to handle clients
         msg = client_message.decode(FORMAT) # Decode the message to get a string
         last_received_msg[client_address] = f'{msg} at {received_time}' # Store the client address with its last message
         print(f'[{client_address}]: {msg}')
-        if len(last_received_msg) >= 3:  # if we have > 3 clients
+        if len(last_received_msg) >= 3:  # if we have >= 3 clients
             print(f'{Colors.OKBLUE}----------------------------------{Colors.ENDC}')
             print(f'{Colors.OKGREEN}[SERVER] OFN server ON{Colors.ENDC}')
             cnt = 1 # Counter to print the number of the client
