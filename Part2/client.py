@@ -2,15 +2,7 @@ import socket
 import time
 from colors import Colors
 
-HOST_IP = socket.gethostbyname(socket.gethostname())  # my IP add 255 instead of last octet
-hostlist = HOST_IP.split('.')  # Split the IP address by '.'
-
-if hostlist[-3] == '255':
-    hostlist[-3] = '255'  # Change the  octet to 255
-if hostlist[-2] == '255':
-    hostlist[-2] = '255'  # Change the  octet to 255
-hostlist[-1] = '255'  # Change the last octet to 255
-HOST_IP = '.'.join(hostlist)  # Join the list again by '.'
+HOST_IP = '172.19.255.255'   # my IP add 255 instead of last octet
 HOST_PORT = 8855  # Port that will be used by the server
 FORMAT = 'utf-8'  # Format of the message that will be sent by the client
 

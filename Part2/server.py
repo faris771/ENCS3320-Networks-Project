@@ -3,7 +3,9 @@ import time
 from colors import Colors
 
 # no need to print the msg from the client, just the receiver
+
 HOST_IP = socket.gethostbyname(socket.gethostname())  # my IP
+
 HOST_PORT = 8855  # Port that will be used by the server
 ADDRESS = (HOST_IP, HOST_PORT)  # Address of the server
 FORMAT = 'utf-8'  # Format of the message that will be sent by the client
