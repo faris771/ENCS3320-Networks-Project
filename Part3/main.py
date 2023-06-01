@@ -1,17 +1,33 @@
 from socket import *
 
+# Define the server port
 serverPort = 9977
+
+# Create a TCP socket
 serverSocket = socket(AF_INET, SOCK_STREAM)
+
+# Bind the socket to the specified port
 serverSocket.bind(("", serverPort))
+
+# Listen for incoming connections
 serverSocket.listen(1)
+
+# Print a message indicating that the server is ready to receive connections
 print("The server is ready to receive")
 
 while True:
     try:
+        # Accept a connection from a client
         connectionSocket, addr = serverSocket.accept()
+
+        # Receive the request sentence from the client and decode it
         sentence = connectionSocket.recv(2048).decode()
+
+        # Print the client's address and the received sentence
         print(addr)
         print(sentence)
+
+        # Extract the client's IP address and port number
         ip = addr[0]
         port = addr[1]
 
@@ -20,6 +36,7 @@ while True:
             # Extract the requested path
             path = sentence.split(" ")[1]
 
+            # Redirect requests to specific paths
             if path == "/yt":
                 connectionSocket.send("HTTP/1.1 307 Temporary Redirect\r\n".encode())
                 connectionSocket.send("Location: https://www.youtube.com\r\n".encode())
@@ -39,8 +56,10 @@ while True:
                 connectionSocket.close()
                 continue
 
+            # Set default content type to "text/html"
             content_type = "text/html"
-            # Set the appropriate file name and Content-Type based on the requested path
+
+            # Determine the requested file based on the path and set appropriate content type
             if path in ["/", "/index.html", "/main_en.html", "/en"]:
                 filename = "main_en.html"
                 content_type = "text/html"
@@ -60,16 +79,15 @@ while True:
                 filename = path[1:]
                 content_type = "image/jpg"
             else:
+                # If path is not found, send a 404 Not Found response
                 with open("NotFound.html", "rb") as file:
                     data = file.read()
-                # Send a 404 Not Found response for invalid paths
                 connectionSocket.send("HTTP/1.1 404 Not Found\r\n".encode())
                 connectionSocket.send("Content-Type: text/html; charset=utf-8\r\n".encode())
                 connectionSocket.send("\r\n".encode())
                 connectionSocket.send(data)
                 connectionSocket.close()
                 continue
-
 
             try:
                 # Open and send the requested file
@@ -83,16 +101,15 @@ while True:
                 # Send a 404 Not Found response if the file doesn't exist
                 with open("NotFound.html", "rb") as file:
                     data = file.read()
-                    # Send a 404 Not Found response for invalid paths
                 connectionSocket.send("HTTP/1.1 404 Not Found\r\n".encode())
                 connectionSocket.send("Content-Type: text/html; charset=utf-8\r\n".encode())
                 connectionSocket.send("\r\n".encode())
                 connectionSocket.send(data)
                 connectionSocket.close()
         else:
+            # Send a 404 Not Found response for invalid requests
             with open("NotFound.html", "rb") as file:
                 data = file.read()
-                # Send a 404 Not Found response for invalid requests
             connectionSocket.send("HTTP/1.1 404 Not Found\r\n".encode())
             connectionSocket.send("Content-Type: text/html; charset=utf-8\r\n".encode())
             connectionSocket.send("\r\n".encode())

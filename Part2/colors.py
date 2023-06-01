@@ -1,3 +1,5 @@
+# colors.py
+# This file contains the colors that will be used in the server.py, client.py file to print colored messages.
 class Colors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'

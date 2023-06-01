@@ -1,8 +1,9 @@
+# client.py
 import socket
 import time
 from colors import Colors
 
-HOST_IP = '172.19.255.255'   # my IP add 255 instead of last octet
+HOST_IP = '192.168.1.255'   # my IP add 255 instead of last octet
 HOST_PORT = 8855  # Port that will be used by the server
 FORMAT = 'utf-8'  # Format of the message that will be sent by the client
 
