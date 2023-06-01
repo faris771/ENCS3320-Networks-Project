@@ -50,7 +50,7 @@ In this project, our assignment involved multiple tasks. In Part 1, we addressed
 
 ## Team Members:
 
-* [Faris Abufahra](https://github.com/faris771)
+* [Faris Abufarha](https://github.com/faris771)
 * [Omar Badawi](https://github.com/itsomar278)
 * [Nadeen Moreb](https://github.com/nadeenmoreb02)
  
