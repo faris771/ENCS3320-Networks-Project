@@ -38,15 +38,13 @@ In this project, our assignment involved multiple tasks. In Part 1, we addressed
 
 
 # Random Screen shots
+![Screenshot (190)](https://github.com/faris771/ENCS3320-Networks-Project/assets/70337488/37acafbd-0e7d-4ae0-bc4b-c2f358d99b76)
 
-![Screenshot (191)](https://github.com/faris771/ENCS3320-Networks-Project/assets/70337488/4d4efe23-0e50-4397-a99f-f856e682e240)
+![Screenshot (191)](https://github.com/faris771/ENCS3320-Networks-Project/assets/70337488/7f818a7b-0f23-4834-afea-4f8ca3620739)
 
-![Screenshot (190)](https://github.com/faris771/ENCS3320-Networks-Project/assets/70337488/17305156-1383-4cce-ba3c-6daa8451e503)
+![servercli](https://github.com/faris771/ENCS3320-Networks-Project/assets/70337488/d7c232bb-aa61-4141-b025-5ebad75a0f70)
 
-![clientcli](https://github.com/faris771/ENCS3320-Networks-Project/assets/70337488/3107c9bf-9b04-4613-8f77-623150c25e19)
-
-![servercli](https://github.com/faris771/ENCS3320-Networks-Project/assets/70337488/70e504c6-db15-4e1f-a73e-689537cda35a)
-
+![clientcli](https://github.com/faris771/ENCS3320-Networks-Project/assets/70337488/46fa5ab1-519c-4084-947e-66264b03e4a3)
 
 ## Team Members:
 
