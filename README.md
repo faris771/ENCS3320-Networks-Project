@@ -2,8 +2,8 @@
 # About this project
 In this project, our assignment involved multiple tasks. In Part 1, we addressed various questions and implemented some commands. Part 2 focused on creating a basic UDP client-server broadcasting program. For Part 3, we developed a simple web server using socket programming, HTML, and CSS to design the front-end of the website. Throughout the project, our team collaborated using Discord for communication and utilized Git and GitHub for version control. Python served as our primary programming language.
 
-
-
+## more details
+> [Project Description](ENCS3320_Project1.pdf)
 ---------------------------------------------------------------------------
 
 # Setup
@@ -29,7 +29,7 @@ In this project, our assignment involved multiple tasks. In Part 1, we addressed
     | arabic index | 200  | /ar  | http://localhost:9977/ar  |
     | Youtube       | 307  | /yt  | http://localhost:9977/yt |
     | Stackoverflow          | 307  | /so | http://localhost:9977/so |
-    | Ritaj      | 307  | /et | http://localhost:9977/rt |
+    | Ritaj      | 307  | /rt | http://localhost:9977/rt |
 
 
 ---------------------------------------------------------------------------
