@@ -7,7 +7,7 @@ In this project, our assignment involved multiple tasks. In Part 1, we addressed
 
 > [Report](Report.pdf)
 ---------------------------------------------------------------------------
-
+# Setup
 
 * install python **>= 3.9** and git
 * clone this repository, and move to it
