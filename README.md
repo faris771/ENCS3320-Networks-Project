@@ -2,11 +2,12 @@
 # About this project
 In this project, our assignment involved multiple tasks. In Part 1, we addressed various questions and implemented some commands. Part 2 focused on creating a basic UDP client-server broadcasting program. For Part 3, we developed a simple web server using socket programming, HTML, and CSS to design the front-end of the website. Throughout the project, our team collaborated using Discord for communication and utilized Git and GitHub for version control. Python served as our primary programming language.
 
-## more details
+## More Details
 > [Project Description](ENCS3320_Project1.pdf)
+
+> [Report](Report.pdf)
 ---------------------------------------------------------------------------
 
-# Setup
 
 * install python **>= 3.9** and git
 * clone this repository, and move to it
@@ -34,6 +35,8 @@ In this project, our assignment involved multiple tasks. In Part 1, we addressed
 
 ---------------------------------------------------------------------------
 
+
+# Random Screen shots
 
 
 
