@@ -18,8 +18,9 @@ In this project, our assignment involved multiple tasks. In Part 1, we addressed
     ```
 * Part 3 run the server    
 
-    ```bash    
-    python3 main.py    
+    ```bash
+    cd Part3
+    python main.py    
     ```
 
 * use a browser ( or any http client ) to visit the following endpoints 
